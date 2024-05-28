@@ -1,0 +1,33 @@
+{
+    "name": "Sorting-Algorithms",
+    "source_dir": ".",
+    "target_dir": "target",
+    "compiler": "rustc",
+    "sysroot": "/usr",
+    "crates": [
+        {
+            "root_module": "./Bubble_Sort/bubble_sort.rs",
+            "edition": "2018",
+            "deps": [],
+            "cfg": [],
+            "env": {},
+            "is_workspace_member": true
+        },
+        {
+            "root_module": "./Insertion_Sort/insertion_sort.rs",
+            "edition": "2018",
+            "deps": [],
+            "cfg": [],
+            "env": {},
+            "is_workspace_member": true
+        },
+        {
+            "root_module": "./Selection_Sort/selection_sort.rs",
+            "edition": "2018",
+            "deps": [],
+            "cfg": [],
+            "env": {},
+            "is_workspace_member": true
+        }
+    ]
+}

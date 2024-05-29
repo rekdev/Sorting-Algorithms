@@ -1,4 +1,4 @@
-def insertion_sort(arr: list) -> list:
+def insertion_sort(arr: list):
     n = len(arr)
 
     for i in range(1, n):

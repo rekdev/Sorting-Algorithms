@@ -1,4 +1,4 @@
-def selection_sort(arr: list) -> list:
+def selection_sort(arr: list):
     n = len(arr)
 
     for i in range(0, n):

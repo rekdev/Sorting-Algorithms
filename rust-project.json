@@ -28,6 +28,14 @@
             "cfg": [],
             "env": {},
             "is_workspace_member": true
+        },
+        {
+            "root_module": "./Merge_Sort/merge_sort.rs",
+            "edition": "2018",
+            "deps": [],
+            "cfg": [],
+            "env": {},
+            "is_workspace_member": true
         }
     ]
 }

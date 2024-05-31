@@ -1,6 +1,6 @@
 fn merge(arr: &mut [isize], left: &mut [isize], right: &mut [isize]) {
     let left_len = left.len();
-    let right_len = left.len();
+    let right_len = right.len();
 
     let mut i = 0;
     let mut j = 0;
@@ -36,12 +36,13 @@ fn merge_sort(arr: &mut [isize]) {
     if n > 1 {
         let mid = n / 2;
 
-        let (left, right) = arr.split_at_mut(mid);
+        let mut left = arr[..mid].to_vec();
+        let mut right = arr[mid..].to_vec();
 
-        merge_sort( left);
-        merge_sort( right);
+        merge_sort( &mut left);
+        merge_sort( &mut right);
 
-        merge(arr, left, right);
+        merge(arr, &mut left, &mut right);
     }
 }
 
